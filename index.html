@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rasoi Mahal Restaurant | Royal flavours, home-style love</title>
+<meta name="description" content="Rasoi Mahal Restaurant: freshly cooked North Indian curries, tandoor breads and biryani for family dinners, takeaway and celebrations.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--g:#0E3B35;--g2:#16524A;--gold:#D9A441;--sf:#F4B630;--chili:#B3261E;--ivory:#FFFBF2;--ink:#1D2B28;--r:22px}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{font:17px/1.65 'Hanken Grotesk',system-ui,sans-serif;color:var(--ink);background:var(--ivory)}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.1}
+a{color:inherit}img{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--sf);outline-offset:3px}
+.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:9;background:var(--g);border-bottom:2px solid var(--gold)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:12px 0;color:#fff}
+.logo{font:800 1.35rem Fraunces,serif;text-decoration:none;color:var(--sf)}
+nav ul{display:flex;gap:26px;list-style:none;padding:0}nav ul a{text-decoration:none;font-weight:500}nav ul a:hover{color:var(--sf)}
+.btn{display:inline-block;padding:13px 26px;border-radius:50px;background:var(--sf);color:var(--g);font-weight:700;text-decoration:none;border:2px solid var(--sf);transition:.2s}
+.btn:hover{background:transparent;color:var(--sf)}.btn.o{background:transparent;color:#fff;border-color:#fff}.btn.o:hover{background:#fff;color:var(--g)}
+.hero{background:var(--g) url(images/pattern.svg);color:#fff;padding:70px 0 90px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(3rem,8vw,6rem);font-weight:800;color:#fff}.hero h1 span{display:block;color:var(--sf)}
+.hero p{max-width:30em;margin:22px 0 30px;font-size:1.15rem;color:#E6EFEA}
+.hero .btns{display:flex;gap:14px;flex-wrap:wrap}
+.arch{border-radius:999px 999px 24px 24px;background:var(--g2);border:3px solid var(--gold);padding:34px 26px 26px;box-shadow:0 0 0 10px rgba(217,164,65,.18);animation:rise 1s ease-out both}
+@keyframes rise{from{opacity:0;transform:translateY(30px)}}
+.arch img{animation:spin 60s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+.arch small{display:block;text-align:center;margin-top:14px;color:var(--sf);font-weight:700}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto}}
+.strip{background:var(--sf);color:var(--g);font-weight:700}.strip .wrap{display:flex;justify-content:space-around;flex-wrap:wrap;gap:8px 24px;padding:16px 0;text-align:center}
+section{padding:84px 0}h2{font-size:clamp(2rem,4.5vw,3.2rem);color:var(--g);margin-bottom:14px}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about .pic{background:var(--g);border-radius:var(--r);padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.about p+p{margin-top:14px}
+.menu{background:#FFF1D6}.tabs{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 34px}
+.tabs button{font:700 1rem 'Hanken Grotesk';padding:10px 22px;border-radius:50px;border:2px solid var(--g);background:transparent;color:var(--g);cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--g);color:#fff}
+.items{display:grid;grid-template-columns:1fr 1fr;gap:6px 56px}
+.item{display:grid;grid-template-columns:70px 1fr;gap:16px;padding:16px 0;border-bottom:1px dashed var(--gold);align-items:center}
+.item img{width:70px;height:70px}.item h3{font-size:1.2rem;color:var(--g)}.item p{font-size:.95rem;color:#51615c}
+.tag{display:inline-block;width:11px;height:11px;border:1.5px solid #2F8F5B;margin-right:8px;position:relative;top:1px}.tag:after{content:"";position:absolute;inset:2px;background:#2F8F5B;border-radius:50%}
+.tag.nv{border-color:var(--chili)}.tag.nv:after{background:var(--chili)}
+.note{margin-top:22px;font-size:.9rem;color:#6a5a2a}
+.why{background:var(--g);color:#fff;background-image:url(images/pattern.svg)}.why h2{color:var(--sf)}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:30px}.cols h3{color:var(--sf);font-size:1.4rem;margin-bottom:8px}.cols p{color:#DCE8E3}
+.visit .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:44px}
+.visit dl{margin-top:20px}.visit dt{font:700 1.1rem Fraunces,serif;color:var(--chili);margin-top:16px}
+iframe{width:100%;height:100%;min-height:360px;border:0;border-radius:var(--r);border:3px solid var(--gold)}
+footer{background:var(--ink);color:#C8D3CF;text-align:center;padding:30px 0;font-size:.9rem}footer b{color:var(--sf)}
+.float{position:fixed;right:18px;bottom:18px;z-index:9;background:#25D366;color:#fff;padding:13px 20px;border-radius:50px;text-decoration:none;font-weight:700;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+@media(max-width:820px){nav ul{display:none}.hero .wrap,.about .wrap,.visit .wrap,.items,.cols{grid-template-columns:1fr}.arch{max-width:340px;margin:auto}section{padding:60px 0}}
+</style></head><body>
+<header><div class="wrap"><nav><a class="logo" href="#top">Rasoi Mahal</a><ul><li><a href="#about">Our story</a></li><li><a href="#menu">Menu</a></li><li><a href="#visit">Visit us</a></li></ul><a class="btn" href="tel:+910000000000">Call to book</a></nav></div></header>
+<main id="top">
+<div class="hero"><div class="wrap"><div>
+<h1>Rasoi Mahal<span>a royal kitchen</span></h1>
+<p>Slow-cooked gravies, tandoor-fresh breads and fragrant biryani, made with whole spices and served the way a family table should be: generous and hot.</p>
+<div class="btns"><a class="btn" href="#menu">See the menu</a><a class="btn o" href="#visit">Find us</a></div></div>
+<div class="arch"><img src="images/hero.svg" alt="Top view of a bowl of rich Indian curry with garnish" width="400" height="400"><small>Cooked fresh, every single order</small></div></div></div>
+<div class="strip"><div class="wrap"><span>Dine-in</span><span>Takeaway</span><span>Family gatherings</span><span>Party orders</span></div></div>
+
+<section class="about" id="about"><div class="wrap"><div>
+<h2>Where every meal feels like a feast</h2>
+<p>In Hindi, <em>rasoi</em> means kitchen, and <em>mahal</em> means palace. Our idea is simple: royal flavour should not cost a royal price.</p>
+<p>We grind our masalas in-house, simmer gravies slowly and bake breads only when you order them. Come with family, bring friends, or take a hot meal home.</p>
+<p style="margin-top:22px"><a class="btn" href="#menu" style="background:var(--g);color:#fff;border-color:var(--g)">Explore our dishes</a></p></div>
+<div class="pic"><img src="images/curry.svg" alt="Spiced curry" loading="lazy"><img src="images/paneer.svg" alt="Creamy paneer dish" loading="lazy"><img src="images/dal.svg" alt="Tadka dal" loading="lazy"><img src="images/veg.svg" alt="Mixed vegetable dish" loading="lazy"></div></div></section>
+
+<section class="menu" id="menu"><div class="wrap"><h2>From our kitchen</h2><p>Pick a category. Ask our team about today's specials.</p>
+<div class="tabs" role="tablist"></div><div class="items" id="items" role="tabpanel"></div>
+<p class="note">Sample menu for preview. Dishes and prices will be replaced with the restaurant's real menu.</p></div></section>
+
+<section class="why"><div class="wrap"><h2>Why families keep coming back</h2><div class="cols">
+<div><h3>Whole spices, ground fresh</h3><p>Real flavour starts with real masala. No shortcuts, no packet mixes.</p></div>
+<div><h3>Hot from the tandoor</h3><p>Naan, roti and kulcha reach your table straight from the fire.</p></div>
+<div><h3>Room for everyone</h3><p>Birthdays, office lunches and family dinners, with party orders taken in advance.</p></div></div></div></section>
+
+<section class="visit" id="visit"><div class="wrap"><div>
+<h2>Come hungry</h2><p>Walk in, call ahead or message us on WhatsApp to reserve a table.</p>
+<dl><dt>Address</dt><dd>Rasoi Mahal Restaurant<br>[Add full address here]</dd>
+<dt>Hours</dt><dd>[Add opening hours], all days</dd>
+<dt>Phone</dt><dd><a href="tel:+910000000000">+91 00000 00000</a></dd></dl>
+<p style="margin-top:24px"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=23.8593895,86.8817188" target="_blank" rel="noopener" style="background:var(--g);color:#fff;border-color:var(--g)">Get directions</a></p></div>
+<iframe title="Map showing Rasoi Mahal Restaurant" loading="lazy" src="https://www.google.com/maps?q=23.8593895,86.8817188&z=16&output=embed"></iframe></div></section>
+</main>
+<footer><div class="wrap"><b>Rasoi Mahal Restaurant</b><br>Made with love, served with spice. <span id="y"></span></div></footer>
+<a class="float" href="https://wa.me/910000000000?text=Hello%20Rasoi%20Mahal%2C%20I%27d%20like%20to%20book%20a%20table" target="_blank" rel="noopener">WhatsApp us</a>
+<script>
+const M={"Starters":[["Paneer Tikka","Charred cottage cheese, mint chutney","paneer",1],["Chicken Tikka","Yoghurt and spice marinade, tandoor-grilled","curry",0],["Veg Seekh Kebab","Minced vegetables, herbs, smoky finish","veg",1],["Crispy Corn","Tossed with pepper and lime","dal",1]],
+"Main course":[["Butter Chicken","Creamy tomato gravy, kasuri methi","curry",0],["Paneer Butter Masala","Rich, silky and mildly sweet","paneer",1],["Dal Makhani","Black lentils simmered overnight","dal",1],["Mutton Rogan Josh","Slow-cooked, Kashmiri chilli","curry",0],["Mix Veg Handi","Seasonal vegetables in house masala","veg",1],["Kadhai Paneer","Peppers, onion, crushed coriander","paneer",1]],
+"Biryani & rice":[["Chicken Dum Biryani","Sealed and slow-cooked with saffron","curry",0],["Veg Biryani","Fragrant basmati, garden vegetables","veg",1],["Jeera Rice","Cumin-tempered basmati","dal",1],["Egg Biryani","Spiced eggs layered with rice","paneer",0]],
+"Breads":[["Butter Naan","Soft, blistered, brushed with butter","dal",1],["Garlic Naan","Fresh garlic and coriander","veg",1],["Tandoori Roti","Whole wheat from the clay oven","paneer",1],["Lachha Paratha","Flaky, layered, crisp edges","dal",1]]};
+const t=document.querySelector('.tabs'),l=document.getElementById('items');
+function show(c){[...t.children].forEach(b=>b.setAttribute('aria-selected',b.textContent==c));
+l.innerHTML=M[c].map(i=>`<div class="item"><img src="images/${i[2]}.svg" alt="" loading="lazy"><div><h3><span class="tag ${i[3]?'':'nv'}" title="${i[3]?'Vegetarian':'Non-vegetarian'}"></span>${i[0]}</h3><p>${i[1]}</p></div></div>`).join('')}
+Object.keys(M).forEach(c=>{const b=document.createElement('button');b.textContent=c;b.setAttribute('role','tab');b.onclick=()=>show(c);t.appendChild(b)});
+show('Starters');document.getElementById('y').textContent='© '+new Date().getFullYear();
+</script></body></html>
