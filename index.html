@@ -50,13 +50,41 @@ iframe{width:100%;height:100%;min-height:360px;border:0;border-radius:var(--r);b
 footer{background:var(--ink);color:#C8D3CF;text-align:center;padding:30px 0;font-size:.9rem}footer b{color:var(--sf)}
 .float{position:fixed;right:18px;bottom:18px;z-index:9;background:#25D366;color:#fff;padding:13px 20px;border-radius:50px;text-decoration:none;font-weight:700;box-shadow:0 6px 18px rgba(0,0,0,.25)}
 @media(max-width:820px){nav ul{display:none}.hero .wrap,.about .wrap,.visit .wrap,.items,.cols{grid-template-columns:1fr}.arch{max-width:340px;margin:auto}section{padding:60px 0}}
+
+.hero{padding:90px 0 110px;background-image:radial-gradient(circle at 80% 30%,rgba(244,182,48,.22),transparent 50%),url(images/pattern.svg)}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}.chips span{border:1px solid var(--gold);color:var(--sf);padding:6px 16px;border-radius:50px;font-size:.9rem;background:rgba(0,0,0,.18)}
+.orn{display:flex;align-items:center;gap:14px;color:var(--gold);margin-bottom:16px}.orn:before,.orn:after{content:"";height:1px;width:60px;background:var(--gold)}.orn b{font-size:1.1rem}
+.center{text-align:center}.center .orn{justify-content:center}.lead{max-width:36em;margin:0 auto 38px;color:#51615c}
+h2{background:linear-gradient(90deg,var(--g),#1c7a6c);-webkit-background-clip:text;background-clip:text;color:transparent}.why h2,.dark h2{background:none;color:var(--sf)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);text-align:center;gap:20px;padding:50px 0}.stats b{display:block;font:800 2.4rem Fraunces,serif;color:var(--chili)}.stats span{color:#51615c}
+.sig{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{background:linear-gradient(160deg,var(--g2),var(--g));color:#fff;border-radius:var(--r);padding:30px;text-align:center;border:1px solid var(--gold);transition:transform .3s,box-shadow .3s;position:relative}
+.card:hover{transform:translateY(-8px);box-shadow:0 22px 40px rgba(14,59,53,.35)}.card img{width:170px;margin:0 auto 16px}.card h3{color:var(--sf);font-size:1.5rem}.card p{color:#DCE8E3;margin:8px 0 14px;font-size:.96rem}
+.card .pr{font:800 1.3rem Fraunces,serif;color:var(--sf)}.card em{position:absolute;top:16px;left:16px;background:var(--chili);color:#fff;font:700 .75rem 'Hanken Grotesk';padding:4px 12px;border-radius:50px;font-style:normal}
+.item .pr{font:800 1.1rem Fraunces,serif;color:var(--chili);white-space:nowrap}.item{grid-template-columns:70px 1fr auto}
+.amb{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:190px;gap:16px}
+.amb div{border-radius:var(--r);padding:20px;display:flex;align-items:flex-end;color:#fff;font:700 1.2rem Fraunces,serif;background:var(--g) url(images/pattern.svg);border:1px solid var(--gold)}
+.amb .a1{grid-row:span 2;background-image:linear-gradient(0deg,rgba(14,59,53,.9),transparent 60%),url(images/pattern.svg),radial-gradient(circle at 60% 30%,#C9861B,#8E2A14)}
+.amb .a2{background-image:linear-gradient(0deg,rgba(0,0,0,.6),transparent),url(images/pattern.svg),linear-gradient(135deg,#16524A,#2F8F5B)}
+.amb .a3{background-image:linear-gradient(0deg,rgba(0,0,0,.6),transparent),url(images/pattern.svg),linear-gradient(135deg,#B3261E,#F4B630)}
+.amb .a4{grid-column:span 2;background-image:linear-gradient(0deg,rgba(0,0,0,.6),transparent),url(images/pattern.svg),linear-gradient(135deg,#3B1A4A,#B3261E)}
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}.how div{background:#fff;border-radius:var(--r);padding:30px;border-top:5px solid var(--sf);box-shadow:0 10px 30px rgba(14,59,53,.1)}.how h3{color:var(--g);margin-bottom:8px}
+.rev{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}.rev blockquote{background:rgba(255,255,255,.07);border:1px solid var(--gold);border-radius:var(--r);padding:28px;color:#E6EFEA}.rev b{display:block;margin-top:14px;color:var(--sf)}.stars{color:var(--sf);letter-spacing:3px}
+.dark{background:var(--g);background-image:url(images/pattern.svg);color:#fff}
+.res{background:linear-gradient(135deg,#FFF1D6,#FFE2A8)}.res .wrap{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px;background:#fff;padding:30px;border-radius:var(--r);box-shadow:0 18px 40px rgba(14,59,53,.18);border:2px solid var(--gold)}
+form label{font-weight:700;font-size:.9rem;color:var(--g)}form input,form select{width:100%;padding:12px;border:1.5px solid #cfd8d4;border-radius:12px;font:inherit;margin-top:4px}form .full{grid-column:1/-1}form button{border:0;cursor:pointer;background:var(--g);color:#fff}form button:hover{background:var(--chili);color:#fff}
+details{background:#fff;border-radius:16px;padding:18px 24px;margin-bottom:12px;border:1px solid #e5dcc3}summary{cursor:pointer;font:700 1.15rem Fraunces,serif;color:var(--g)}details p{margin-top:10px;color:#51615c}
+.faq{max-width:780px}
+.rv{opacity:0;transform:translateY(24px);transition:.8s}.rv.on{opacity:1;transform:none}
+@media(max-width:820px){.stats .wrap,.sig,.how,.rev,.res .wrap,.amb{grid-template-columns:1fr}.amb{grid-auto-rows:150px}.amb .a1,.amb .a4{grid-column:auto;grid-row:auto}.stats .wrap{grid-template-columns:1fr 1fr}form{grid-template-columns:1fr}.item{grid-template-columns:60px 1fr auto}}
 </style></head><body>
-<header><div class="wrap"><nav><a class="logo" href="#top">Rasoi Mahal</a><ul><li><a href="#about">Our story</a></li><li><a href="#menu">Menu</a></li><li><a href="#visit">Visit us</a></li></ul><a class="btn" href="tel:+910000000000">Call to book</a></nav></div></header>
+<header><div class="wrap"><nav><a class="logo" href="#top">Rasoi Mahal</a><ul><li><a href="#about">Our story</a></li><li><a href="#sig">Specials</a></li><li><a href="#menu">Menu</a></li><li><a href="#reserve">Reserve</a></li><li><a href="#visit">Visit us</a></li></ul><a class="btn" href="#reserve">Book a table</a></nav></div></header>
 <main id="top">
 <div class="hero"><div class="wrap"><div>
 <h1>Rasoi Mahal<span>a royal kitchen</span></h1>
 <p>Slow-cooked gravies, tandoor-fresh breads and fragrant biryani, made with whole spices and served the way a family table should be: generous and hot.</p>
-<div class="btns"><a class="btn" href="#menu">See the menu</a><a class="btn o" href="#visit">Find us</a></div></div>
+<div class="chips"><span>Fresh masala daily</span><span>Tandoor specials</span><span>Family &amp; party orders</span></div><div class="btns" style="margin-top:30px"><a class="btn" href="#reserve">Book a table</a><a class="btn o" href="#menu">See the menu</a></div></div>
 <div class="arch"><img src="images/hero.svg" alt="Top view of a bowl of rich Indian curry with garnish" width="400" height="400"><small>Cooked fresh, every single order</small></div></div></div>
 <div class="strip"><div class="wrap"><span>Dine-in</span><span>Takeaway</span><span>Family gatherings</span><span>Party orders</span></div></div>
 
@@ -67,15 +95,35 @@ footer{background:var(--ink);color:#C8D3CF;text-align:center;padding:30px 0;font
 <p style="margin-top:22px"><a class="btn" href="#menu" style="background:var(--g);color:#fff;border-color:var(--g)">Explore our dishes</a></p></div>
 <div class="pic"><img src="images/curry.svg" alt="Spiced curry" loading="lazy"><img src="images/paneer.svg" alt="Creamy paneer dish" loading="lazy"><img src="images/dal.svg" alt="Tadka dal" loading="lazy"><img src="images/veg.svg" alt="Mixed vegetable dish" loading="lazy"></div></div></section>
 
+
+<section class="stats" style="padding:0"><div class="wrap"><div><b>50+</b><span>Dishes on our menu</span></div><div><b>100%</b><span>Fresh, made to order</span></div><div><b>7 days</b><span>Open every week</span></div><div><b>Party</b><span>Orders welcome</span></div></div></section>
+<section id="sig"><div class="wrap center"><div class="orn"><b>&#10022;</b></div><h2>Chef's signatures</h2><p class="lead">The dishes our guests order again and again. Three plates to start your royal meal.</p>
+<div class="sig"><div class="card rv"><em>Bestseller</em><img src="images/curry.svg" alt="Butter chicken" loading="lazy"><h3>Butter Chicken</h3><p>Tandoori chicken in a velvety tomato-butter gravy.</p><span class="pr">&#8377;280</span></div>
+<div class="card rv"><em>Veg favourite</em><img src="images/paneer.svg" alt="Paneer butter masala" loading="lazy"><h3>Paneer Butter Masala</h3><p>Soft paneer, cashew cream, a touch of honey.</p><span class="pr">&#8377;240</span></div>
+<div class="card rv"><em>Weekend special</em><img src="images/dal.svg" alt="Dal makhani" loading="lazy"><h3>Dal Makhani</h3><p>Black lentils, slow-simmered overnight on low heat.</p><span class="pr">&#8377;200</span></div></div></div></section>
 <section class="menu" id="menu"><div class="wrap"><h2>From our kitchen</h2><p>Pick a category. Ask our team about today's specials.</p>
 <div class="tabs" role="tablist"></div><div class="items" id="items" role="tabpanel"></div>
-<p class="note">Sample menu for preview. Dishes and prices will be replaced with the restaurant's real menu.</p></div></section>
+<p class="note">Sample menu and prices for preview. They will be replaced with the restaurant's real menu.</p></div></section>
 
 <section class="why"><div class="wrap"><h2>Why families keep coming back</h2><div class="cols">
 <div><h3>Whole spices, ground fresh</h3><p>Real flavour starts with real masala. No shortcuts, no packet mixes.</p></div>
 <div><h3>Hot from the tandoor</h3><p>Naan, roti and kulcha reach your table straight from the fire.</p></div>
 <div><h3>Room for everyone</h3><p>Birthdays, office lunches and family dinners, with party orders taken in advance.</p></div></div></div></section>
 
+
+<section><div class="wrap center"><div class="orn"><b>&#10022;</b></div><h2>The Rasoi Mahal experience</h2><p class="lead">A warm, welcoming space for every occasion. Replace these tiles with the restaurant's real photos.</p>
+<div class="amb"><div class="a1">Family dining hall</div><div class="a2">Tandoor corner</div><div class="a3">Celebrations</div><div class="a4">Takeaway &amp; party packs</div></div></div></section>
+<section style="background:#FFF8E8"><div class="wrap center"><div class="orn"><b>&#10022;</b></div><h2>Three easy ways to enjoy us</h2><p class="lead">Eat in, take away, or bring the feast to your own celebration.</p>
+<div class="how"><div><h3>Dine in</h3><p>Relax with family and friends. Reserve a table in under a minute using the form below.</p></div><div><h3>Takeaway</h3><p>Call or WhatsApp your order. We pack it hot and fresh, ready when you arrive.</p></div><div><h3>Party orders</h3><p>Birthdays, pujas, office lunches. Tell us the headcount and we plan the menu.</p></div></div></div></section>
+<section class="dark"><div class="wrap center"><div class="orn"><b>&#10022;</b></div><h2>Guests love the flavour</h2><p class="lead" style="color:#C8D3CF">Sample reviews for preview only. Replace with real Google reviews before going live.</p>
+<div class="rev"><blockquote><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><p>The butter chicken tasted like home, but better. Perfect for a family dinner.</p><b>Sample guest</b></blockquote><blockquote><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><p>Naan straight from the tandoor and quick, friendly service.</p><b>Sample guest</b></blockquote><blockquote><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><p>We ordered for 30 people and everything arrived hot and on time.</p><b>Sample guest</b></blockquote></div></div></section>
+<section class="res" id="reserve"><div class="wrap"><div><div class="orn" style="justify-content:flex-start"><b>&#10022;</b></div><h2>Reserve your table</h2><p>Fill in the details and tap the button. Your request opens in WhatsApp, and we confirm it quickly.</p></div>
+<form id="rf"><label>Your name<input id="n" required></label><label>Guests<select id="g"><option>2</option><option>3-4</option><option>5-8</option><option>9+ (party)</option></select></label><label>Date<input id="d" type="date" required></label><label>Time<input id="t" type="time" required></label><button class="btn full" type="submit">Send on WhatsApp</button></form></div></section>
+<section><div class="wrap faq"><div class="center"><div class="orn"><b>&#10022;</b></div><h2>Good to know</h2></div>
+<details><summary>Do you take party and bulk orders?</summary><p>Yes. Call or WhatsApp us a day ahead with the headcount and date.</p></details>
+<details><summary>Do you have vegetarian options?</summary><p>Yes, a wide choice. Green markers on the menu show vegetarian dishes.</p></details>
+<details><summary>Can I order takeaway?</summary><p>Absolutely. Call or message us and we will have it packed when you arrive.</p></details>
+<details><summary>Do I need to book a table?</summary><p>Walk-ins are welcome. We suggest booking for weekends and groups.</p></details></div></section>
 <section class="visit" id="visit"><div class="wrap"><div>
 <h2>Come hungry</h2><p>Walk in, call ahead or message us on WhatsApp to reserve a table.</p>
 <dl><dt>Address</dt><dd>Rasoi Mahal Restaurant<br>[Add full address here]</dd>
@@ -87,13 +135,17 @@ footer{background:var(--ink);color:#C8D3CF;text-align:center;padding:30px 0;font
 <footer><div class="wrap"><b>Rasoi Mahal Restaurant</b><br>Made with love, served with spice. <span id="y"></span></div></footer>
 <a class="float" href="https://wa.me/910000000000?text=Hello%20Rasoi%20Mahal%2C%20I%27d%20like%20to%20book%20a%20table" target="_blank" rel="noopener">WhatsApp us</a>
 <script>
-const M={"Starters":[["Paneer Tikka","Charred cottage cheese, mint chutney","paneer",1],["Chicken Tikka","Yoghurt and spice marinade, tandoor-grilled","curry",0],["Veg Seekh Kebab","Minced vegetables, herbs, smoky finish","veg",1],["Crispy Corn","Tossed with pepper and lime","dal",1]],
-"Main course":[["Butter Chicken","Creamy tomato gravy, kasuri methi","curry",0],["Paneer Butter Masala","Rich, silky and mildly sweet","paneer",1],["Dal Makhani","Black lentils simmered overnight","dal",1],["Mutton Rogan Josh","Slow-cooked, Kashmiri chilli","curry",0],["Mix Veg Handi","Seasonal vegetables in house masala","veg",1],["Kadhai Paneer","Peppers, onion, crushed coriander","paneer",1]],
-"Biryani & rice":[["Chicken Dum Biryani","Sealed and slow-cooked with saffron","curry",0],["Veg Biryani","Fragrant basmati, garden vegetables","veg",1],["Jeera Rice","Cumin-tempered basmati","dal",1],["Egg Biryani","Spiced eggs layered with rice","paneer",0]],
-"Breads":[["Butter Naan","Soft, blistered, brushed with butter","dal",1],["Garlic Naan","Fresh garlic and coriander","veg",1],["Tandoori Roti","Whole wheat from the clay oven","paneer",1],["Lachha Paratha","Flaky, layered, crisp edges","dal",1]]};
+const M={"Starters":[["Paneer Tikka","Charred cottage cheese, mint chutney","paneer",1,160],["Chicken Tikka","Yoghurt and spice marinade, tandoor-grilled","curry",0,280],["Veg Seekh Kebab","Minced vegetables, herbs, smoky finish","veg",1,150],["Crispy Corn","Tossed with pepper and lime","dal",1,120]],
+"Main course":[["Butter Chicken","Creamy tomato gravy, kasuri methi","curry",0,280],["Paneer Butter Masala","Rich, silky and mildly sweet","paneer",1,240],["Dal Makhani","Black lentils simmered overnight","dal",1,200],["Mutton Rogan Josh","Slow-cooked, Kashmiri chilli","curry",0,380],["Mix Veg Handi","Seasonal vegetables in house masala","veg",1,220],["Kadhai Paneer","Peppers, onion, crushed coriander","paneer",1,260]],
+"Biryani & rice":[["Chicken Dum Biryani","Sealed and slow-cooked with saffron","curry",0,320],["Veg Biryani","Fragrant basmati, garden vegetables","veg",1,240],["Jeera Rice","Cumin-tempered basmati","dal",1,100],["Egg Biryani","Spiced eggs layered with rice","paneer",0,260]],
+"Breads":[["Butter Naan","Soft, blistered, brushed with butter","dal",1,50],["Garlic Naan","Fresh garlic and coriander","veg",1,70],["Tandoori Roti","Whole wheat from the clay oven","paneer",1,40],["Lachha Paratha","Flaky, layered, crisp edges","dal",1,60]]};
 const t=document.querySelector('.tabs'),l=document.getElementById('items');
 function show(c){[...t.children].forEach(b=>b.setAttribute('aria-selected',b.textContent==c));
-l.innerHTML=M[c].map(i=>`<div class="item"><img src="images/${i[2]}.svg" alt="" loading="lazy"><div><h3><span class="tag ${i[3]?'':'nv'}" title="${i[3]?'Vegetarian':'Non-vegetarian'}"></span>${i[0]}</h3><p>${i[1]}</p></div></div>`).join('')}
+l.innerHTML=M[c].map(i=>`<div class="item"><img src="images/${i[2]}.svg" alt="" loading="lazy"><div><h3><span class="tag ${i[3]?'':'nv'}" title="${i[3]?'Vegetarian':'Non-vegetarian'}"></span>${i[0]}</h3><p>${i[1]}</p></div><span class="pr">&#8377;${i[4]}</span></div>`).join('')}
 Object.keys(M).forEach(c=>{const b=document.createElement('button');b.textContent=c;b.setAttribute('role','tab');b.onclick=()=>show(c);t.appendChild(b)});
 show('Starters');document.getElementById('y').textContent='© '+new Date().getFullYear();
+
+document.getElementById('rf').onsubmit=e=>{e.preventDefault();const v=id=>document.getElementById(id).value;
+location.href='https://wa.me/910000000000?text='+encodeURIComponent('Hello Rasoi Mahal, table booking: '+v('n')+', '+v('g')+' guests, '+v('d')+' at '+v('t'))};
+const io=new IntersectionObserver(a=>a.forEach(x=>x.isIntersecting&&x.target.classList.add('on')),{threshold:.2});document.querySelectorAll('.rv').forEach(x=>io.observe(x));
 </script></body></html>
